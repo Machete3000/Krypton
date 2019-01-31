@@ -6,6 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentFactory.Krypton.Docking", "ComponentFactory.Krypton.Docking\ComponentFactory.Krypton.Docking.csproj", "{E00FF125-CB44-480B-847E-7B3D27E481EB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentFactory.Krypton.Navigator", "ComponentFactory.Krypton.Navigator\ComponentFactory.Krypton.Navigator.csproj", "{DC0DD714-4D19-4F31-A6D0-EA209D4F0EA8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{96ECAECC-54F8-4AA5-8591-B443C2D9565F} = {96ECAECC-54F8-4AA5-8591-B443C2D9565F}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentFactory.Krypton.Ribbon", "ComponentFactory.Krypton.Ribbon\ComponentFactory.Krypton.Ribbon.csproj", "{E90FC375-453D-4FE4-9822-CE1DB85B6553}"
 EndProject

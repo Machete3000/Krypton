@@ -32,7 +32,6 @@ using System.Diagnostics;
 [assembly: ComVisible(true)]
 [assembly: CLSCompliant(true)]
 [assembly: AllowPartiallyTrustedCallers()]
-[assembly: SecurityRules(SecurityRuleSet.Level1)]
 [assembly: Dependency("System", LoadHint.Always)]
 [assembly: Dependency("System.Drawing", LoadHint.Always)]
 [assembly: Dependency("System.Windows.Forms", LoadHint.Always)]
