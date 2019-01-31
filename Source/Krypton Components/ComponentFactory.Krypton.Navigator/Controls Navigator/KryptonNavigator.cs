@@ -628,6 +628,8 @@ namespace ComponentFactory.Krypton.Navigator
             return !_header.IsDefault;
         }
 
+        public static int TabWidthsHack { get; set; }
+
         /// <summary>
         /// Gets access to the panels specific settings.
         /// </summary>

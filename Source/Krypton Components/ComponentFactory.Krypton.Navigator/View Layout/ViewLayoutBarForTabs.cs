@@ -133,12 +133,18 @@ namespace ComponentFactory.Krypton.Navigator
             else
                 orderedChildren = this.Reverse();
 
+            int widthHack = 0;
+
             // Ask each child to render in turn
             foreach (ViewBase child in orderedChildren)
             {
                 // Only render visible children that are inside the clipping rectangle
                 if (child.Visible && child.ClientRectangle.IntersectsWith(context.ClipRect))
                 {
+                    // Hack Hack Hack to get the width of the Tabs 
+                    if (child.ClientRectangle.X + child.ClientRectangle.Width > widthHack)
+                        widthHack = child.ClientRectangle.X + child.ClientRectangle.Width;
+                                        
                     // If this is a page representation that can overlap group border
                     if ((child is ViewDrawNavCheckButtonBar) ||
                         (child is ViewDrawNavRibbonTab))
@@ -162,6 +168,7 @@ namespace ComponentFactory.Krypton.Navigator
                     }
                 }
             }
+            KryptonNavigator.TabWidthsHack = widthHack;
         }
         #endregion
     }
