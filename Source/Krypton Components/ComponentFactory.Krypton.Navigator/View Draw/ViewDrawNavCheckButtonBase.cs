@@ -498,7 +498,8 @@ namespace ComponentFactory.Krypton.Navigator
                 else 
                 {
                     if (CommonHelper.ValidContextMenuStrip(scma.ContextMenuStrip))
-                        scma.ContextMenuStrip.Show(_navigator.PointToScreen(new Point(e.X, e.Y)));
+                        scma.ContextMenuStrip.Show(_page, new Point(e.X, e.Y - this.ClientHeight));
+                    
                 }
             }
         }
